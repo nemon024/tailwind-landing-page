@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building landing page using Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screen: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+          colors: {
+            primary: "#ff5757",
+            blue: "#1fb6ff",
+            purple: "#7e5bef",
+            pink: "#ff49db",
+            orange: "#ff7849",
+            green: "13ce66",
+            yellow: "#ffc82c",
+            "grey-dark": "#273444",
+            grey: "#8492a6",
+            "grey-light": "#d3dce6",
+          },
+
+          extend: {
+            fontSize: {
+              xs: "0.75rem",
+              sm: "0.875rem",
+              base: "1rem",
+              lg: "1.125rem",
+              xl: "1.25rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="flex justify-between items-center px-6 py-1">
+          <img
+            src="https://www.google.com/logos/doodles/2025/international-womens-day-2025-6753651837110620.3-ldrk.png"
+            class="h-20"
+            alt="logo"
+          />
+          <div class="flex gap-4">
+            <a href="" class="text-sm font-medium hover:text-primary"
+              >Our Programs</a
+            >
+            <a href="" class="text-sm font-medium hover:text-primary"
+              >Register Now</a
+            >
+            <a href="" class="text-sm font-medium hover:text-primary"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </header>
+      <section>
+        <div>
+          <h1>Lorem ipsum dolor sit amet consectetur</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+            perspiciatis ipsum amet sapiente
+          </p>
+          <div>
+            <button>Register now</button>
+            <button>Explore Course</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
